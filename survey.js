@@ -20,7 +20,7 @@ const validationSchema = Yup.object().shape({
   favoriteCrop: Yup.string().required('Required'),
   experienceYears: Yup.number().required('Required').positive('Years of experience must be positive').integer('Years of experience must be an integer'),
   feedback: Yup.string().required('Required'),
-});
+} );
 
 const onSubmit = (values) => {
   // Here, you can perform actions with the survey data, like sending it to a server.
